@@ -6,7 +6,6 @@ const LogoutButton = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    
     localStorage.removeItem("uid");
     navigate("/login");
   };
@@ -15,13 +14,14 @@ const LogoutButton = () => {
     <Button
       onClick={handleLogout}
       variant="contained"
-      color="secondary" 
       sx={{
-        borderRadius: '8px', 
-        padding: '8px 20px',  
-        fontWeight: 'bold',  
+        backgroundColor: '#2196F3', // Blue color for the button
+        color: 'white', // White text
+        borderRadius: '8px',
+        padding: '8px 20px',
+        fontWeight: 'bold',
         '&:hover': {
-          backgroundColor: '#4CAF50', 
+          backgroundColor: '#1976D2', // Darker blue for hover
         },
       }}
     >
